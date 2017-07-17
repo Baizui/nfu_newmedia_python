@@ -12,13 +12,16 @@ Internet_penetration_rates_in_China_by_province
 用户输入省份名称或直辖市名称,交互界面使用到[HTML5之select表单标签](http://www.divcss5.com/html/h336.shtml),所以用户可以用省份名称或直辖市名称找到所需的数据.详细见[templates/entry.html](templates/entry.html)
 ## 输出：
 用户得到的输出结果为：该省份或者直辖市的十年互联网普及率的数据,详细见[templates/results.html](templates/results.html)
-## 从输入到输出，本组作品使用了：
+## 从输入到输出,除了flask模块,本组作品使用了：
+
 ### 模块
-* pandas 大数据，将数据转化为tsv档,再将它转为字典。弄成列表，将每个省份与十年数据对接起来。
-* requests
-* json
+* [requests](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
+* [json](https://docs.python.org/2/library/json.html)
+
 ### 数据,
-* [国家数据统计局官网](http://data.stats.gov.cn/easyquery.htm?cn=E0103),本组并未使用API
+*  从 [国家数据统计局官网](http://data.stats.gov.cn/easyquery.htm?cn=E0103)
+上，将34个省份和直辖市的资料保存到本地，见[data](data)
+*  资料类型：字典包字典,csv档
 
 ## Web App动作描述
 
