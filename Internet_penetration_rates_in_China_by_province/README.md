@@ -17,15 +17,16 @@ Internet_penetration_rates_in_China_by_province
 ### 模块
 * [requests](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
 * [json](https://docs.python.org/2/library/json.html)
-
+* [pandas](http://stackoverflow.com/questions/22180993/pandas-dataframe-display-on-a-webpage)
 ### 数据,
 *  从 [国家数据统计局官网](http://data.stats.gov.cn/easyquery.htm?cn=E0103)
 上，将34个省份和直辖市的资料保存到本地，见[data](data)
-*  资料类型：字典包字典,csv档
-
+*  资料类型：字典包字典,tsv档和json档.
+### API
+本组未使用API,使用了pandas大数据分析，详细见[Internet_penetration_rates_in_China_by_province / main.py](Internet_penetration_rates_in_China_by_province / main.py)
 ## Web App动作描述
 
-1.以下按web 请求（web request） - web 响应 时序说明
+1.在[collect_data.py]collect_data.py)中，def collect_champion()函数，调用api，生成一个含有所有英雄简要资料的json档data/champion.json保存到本地的data文件夹中。
 
 2.後端伺服器启动：执行 Internet_penetration_rates_in_China_by_province.py 启动後端伺服器，等待web 请求。启动成功应出现： * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
