@@ -9,7 +9,7 @@ Internet_penetration_rates_in_China_by_province
 		
 
 ## 输入：
-[省份的名字](https://github.com/Baizui/nfu_newmedia_python/blob/master/province/templates/entry.html)
+用户输入省份名称或直辖市名称,交互界面使用到[Html form <select>下拉列表菜单与跳转菜单表单标签篇](http://www.divcss5.com/html/h336.shtml),所以用户可以用省份名称或直辖市名称找到所需的数据.详细见[templates/entry.html](templates/entry.html)
 ## 输出：
 [该省份互联网普及率最近十年的数据](https://github.com/Baizui/nfu_newmedia_python/blob/master/province/templates/results.html)
 ## 从输入到输出，本组作品使用了：
@@ -17,7 +17,7 @@ Internet_penetration_rates_in_China_by_province
 * pandas 大数据，将数据转化为tsv档,再将它转为字典。弄成列表，将每个省份与十年数据对接起来。
 * requests
 * json
-### 数据
+### 数据,
 * [国家数据统计局官网](http://data.stats.gov.cn/easyquery.htm?cn=E0103),本组并未使用API
 
 ## Web App动作描述
