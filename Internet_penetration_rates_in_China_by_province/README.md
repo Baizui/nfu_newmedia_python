@@ -1,9 +1,9 @@
 Internet_penetration_rates_in_China_by_province
 
-英文名字为Internet_penetration_rates_in_China_by_province,中文名字为中国省份互联网普及率。
+英文项目名称为Internet_penetration_rates_in_China_by_province,中文名字为中国省份互联网普及率.就是指各省份或者直辖市的十年互联网普及率相关数据的说明.
 		
 # 简介 
-选取省份，输入方面为省份的名称，输出方面则是省份的10年互联网普及率，可查省份34个，数据来源为从国家数据统计局官网取得的tsv档和json档。
+中国各省份或直辖市十年互联网普及率的查询（十年即2006年~2015年）,输入方面用户可输入想查询省份或直辖市的名称（如"广东省"、"北京市")，输出方面则是该省份或者直辖市的10年互联网普及率（由于前四年的数据空白,只有后六年的数据）,可查省份和直辖市一共34个.数据来源为从国家数据统计局官网取得的tsv档和json档。
 
 
 		
@@ -12,7 +12,6 @@ Internet_penetration_rates_in_China_by_province
 用户输入省份名称或直辖市名称,交互界面使用到[HTML5之select表单标签](http://www.divcss5.com/html/h336.shtml),所以用户可以用省份名称或直辖市名称找到所需的数据.详细见[templates/entry.html](templates/entry.html)
 ## 输出：
 用户得到的输出结果为：该省份或者直辖市的十年互联网普及率的数据,详细见[templates/results.html](templates/results.html)
-![输出](输出.png)
 ## 从输入到输出，本组作品使用了：
 ### 模块
 * pandas 大数据，将数据转化为tsv档,再将它转为字典。弄成列表，将每个省份与十年数据对接起来。
