@@ -23,7 +23,7 @@ Internet_penetration_rates_in_China_by_province
 上，将34个省份和直辖市的资料保存到本地，见[data](data)
 *  资料类型：字典包字典,tsv档和json档.
 ### API
-本组未使用API,使用了pandas大数据分析，详细见[Internet_penetration_rates_in_China_by_province / main.py](Internet_penetration_rates_in_China_by_province / main.py)
+本组未使用API,使用了pandas大数据分析，详细见[main.py]（main.py)
 ## Web App动作描述
 
 1.在[datatemp.py](datatemp.py)中，def collect_champion()函数，调用api，生成一个含有所有英雄简要资料的json档data/champion.json保存到本地的data文件夹中。
