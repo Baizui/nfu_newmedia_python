@@ -21,8 +21,7 @@ Internet_penetration_rates_in_China_by_province
 * [json](https://docs.python.org/2/library/json.html)
 * [pandas](http://stackoverflow.com/questions/22180993/pandas-dataframe-display-on-a-webpage)
 ### 数据
-*  从 [国家数据统计局官网](http://data.stats.gov.cn/easyquery.htm?cn=E0103)
-上，将34个省份和直辖市的资料保存到本地，见[data](data)
+*  从 [国家数据统计局官网](http://data.stats.gov.cn/easyquery.htm?cn=E0103)上，将34个省份和直辖市的资料保存到本地，见[data](data)
 *  资料类型：字典包字典,tsv档和json档.
 ### API
 *  本组未使用API,使用了pandas大数据分析，详细见[main.py](main.py)
@@ -36,9 +35,9 @@ Internet_penetration_rates_in_China_by_province
 
 2.在[datatemp.py ](datatemp.py )中，def get_data()函数，打开[province_code_name.json ](province_code_name.json )，返回一个以省份或者直辖市的代码为键，中文名和代码为值的字典(见代码temp = df[['reg','sj','data']].set_index('reg').to_dict()['data'])，用做后面的函数和网页的表单界面，目标是用户输入英省份或者直辖市的中文名能得到想要的结果。def get_data()函数，将省份的中文名输入转换成互联网普及率，调用函数def get_data()，运用for循环，如（int_pr = df.query("zb=='A0G0H05'")[['reg','sj', 'data']]）,从中可以得到该省份或者直辖市的代码、时间、数据.如果输入的名称不存在,返回'error'字符串.
 
-* 以下按web 请求（web request） - web 响应 时序说明
+ 以下按web 请求（web request） - web 响应 时序说明
 
-1. 后端伺服器启动：执行 game_hero_data.py 启动后端伺服器，等待web 请求。启动成功应出现： * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+1.后端伺服器启动：执行 game_hero_data.py 启动后端伺服器，等待web 请求。启动成功应出现： * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 2.前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
 
